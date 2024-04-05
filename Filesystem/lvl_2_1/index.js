@@ -25,3 +25,4 @@ fs.writeFile("ausgabe.txt", textData, (err) => {
   }
   console.log(textData);
 });
+
