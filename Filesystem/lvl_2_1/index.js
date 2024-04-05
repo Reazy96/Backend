@@ -4,7 +4,7 @@ const fs = require("fs");
 //! Umwandeln der JSON-Daten in Textformat
 
 // die umgewandelte Datei soll in eine Variable abgespeichert werden.
-const textData = data
+const textData =
   // -   Regex-Code startet mit "/"
   // ? "\s" steht für alle Leerzeichen
   // ? "/g" steht dafür dass "\s" überall gesucht wird und schliesslich mit einem Leeren string ersetzt wird.
@@ -13,8 +13,7 @@ const textData = data
 
   // * \n\n steht für doppelten Zeilenumbruch ist aber kein Regex
 
-  .map((item) => `${item.id} - ${item.title.replace(/\s/g, "")}\n${item.description}\n\n`)
-  .join("");
+  data.map((item) => `${item.id} - ${item.title.replace(/\s/g, "")}\n${item.description}\n\n`).join("");
 
 // Schreiben der Textdaten in eine Datei
 fs.writeFile("ausgabe.txt", textData, (err) => {
@@ -25,4 +24,3 @@ fs.writeFile("ausgabe.txt", textData, (err) => {
   }
   console.log(textData);
 });
-

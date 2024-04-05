@@ -1,8 +1,13 @@
 const fs = require("fs");
 
-const data = "./newText.txt";
+const data = "ordner/newText.txt";
 
 // Überprüfen, ob die Datei existiert
+const ordnerName = "ordner";
+
+fs.mkdirSync(ordnerName);
+console.log("Neuer Ordner erstellt.");
+
 if (fs.existsSync(data)) {
   // greift auf die txt. Datei zu und nach dem Komma definieren wir unser Kontent.
   fs.appendFile(data, "blabla ", (err) => {
