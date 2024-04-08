@@ -1,6 +1,3 @@
-const { log } = require("console");
-const { resolve } = require("path");
-
 function doubleNumber(number) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
