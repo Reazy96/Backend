@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const data = "ordner/newText.txt";
 
-// Überprüfen, ob die Datei existiert
+
 const ordnerName = "ordner";
 
 fs.mkdirSync(ordnerName);
