@@ -19,10 +19,17 @@ function randomTimeout(wait) {
 //     console.log(err);
 //   });
 
-Promise.all([randomTimeout(2000), randomTimeout(3000), randomTimeout(4000)])
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// Promise.all([randomTimeout(2000), randomTimeout(3000), randomTimeout(4000)])
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+array = [1, 23, 4, 5, 6, 7, 8, 8, 5, 5, 4, 3, 22];
+let newArr = [];
+for (let i = array.length - 1; i >= 0; i--) {
+  newArr.push(array[i]);
+}
+console.log(newArr);
