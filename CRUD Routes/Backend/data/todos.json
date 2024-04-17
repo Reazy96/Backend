@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Einkaufen",
+    "status": "incomplete"
+  },
+  {
+    "id": 2,
+    "title": "Wäsche waschen",
+    "status": "incomplete"
+  },
+  {
+    "id": 3,
+    "title": "Sport treiben",
+    "status": "complete"
+  },
+  {
+    "id": 4,
+    "title": "Arzttermin vereinbaren",
+    "status": "incomplete"
+  },
+  {
+    "id": 5,
+    "title": "Gassi gehen",
+    "status": "incomplete"
+  }
+]
