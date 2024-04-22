@@ -20,9 +20,9 @@ const AddBlog = () => {
 
     formData.append("Blog", bild, bild.name);
 
-    console.log(bild);
-    console.log(titel);
-    console.log(text);
+    // console.log(bild);
+    // console.log(titel);
+    // console.log(text);
 
     fetch("http://localhost:1122/api/files/uploads", {
       method: "POST",

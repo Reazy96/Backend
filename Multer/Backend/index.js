@@ -54,7 +54,7 @@ app.post("/api/v1/blogs", (req, res) => {
 
       const newBlog = {
         id: newId,
-        Titel: req.body.Title,
+        Titel: req.body.Titel,
         Beitragsbild: req.body.Beitragsbild,
         Text: req.body.Text,
       };
@@ -93,5 +93,3 @@ app.patch("/api/v1/blogs/:id", (req, res) => {
 
 const PORT = 1122;
 app.listen(PORT, () => console.log(`Server ready at http://localhost:${PORT}`));
-
-
